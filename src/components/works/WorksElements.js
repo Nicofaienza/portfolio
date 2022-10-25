@@ -2,21 +2,40 @@ import styled from "styled-components";
 
 export const WorksSection = styled.section`
   position: relative;
-  height: 100vh;
-  margin-left: 60px;
-  background: var(--white);
   display: flex;
+  height: 100vh;
+  width: 100%;
+  padding-left: 60px;
+  background: var(--white);
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
-  gap: 60px;
+
+  & .mainContainer {
+    width: 100%;
+    height: 2000px;
+    transform: rotateY(180deg);
+  }
+
+  & .Container {
+    margin: auto;
+    background: var(--white);
+  }
+
+  & .Content {
+    background: var(--white);
+  }
+
+  & .error {
+    display: none;
+  }
 `;
 
 export const WorksContainer = styled.div`
   display: flex;
   gap: 60px;
   flex-wrap: wrap;
-  width: 80%;
+  width: 90%;
   justify-content: center;
   align-items: center;
   height: 50vh;
@@ -66,60 +85,11 @@ export const WorksCard = styled.div`
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid rgba(255, 255, 255, 0.3);
-
+  align-items: center;
   padding: 20px;
   border-radius: 20px;
-  gap: 10px;
+  gap: 20px;
   transition: all 0.3s ease;
-
-  &:hover {
-    transform: scale(1.1);
-  }
-
-  & #card-icons-container {
-    margin-top: 20px;
-    display: flex;
-    gap: 8px;
-    align-self: flex-end;
-  }
-
-  & #card-icons-container a {
-    color: var(--vlack);
-  }
-
-  & #card-icons-container svg {
-    width: 25px;
-    height: 25px;
-    cursor: pointer;
-  }
-`;
-
-export const WorksCardMain = styled.div`
-  display: flex;
-  flex-direction: column;
-
-  background: rgba(65, 90, 119, 0.5);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(65, 90, 119, 0.5);
-  backdrop-filter: blur(5px);
-  -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
-
-  padding: 20px;
-  border-radius: 20px;
-  gap: 10px;
-  transition: all 0.3s ease;
-  & > #works-card-img-container {
-    width: 450px;
-  }
-
-  & > #works-card-img-container img {
-    width: 100%;
-  }
-
-  &:hover {
-    transform: scale(1.1);
-  }
 
   & #card-icons-container {
     margin-top: 20px;
@@ -140,7 +110,7 @@ export const WorksCardMain = styled.div`
 `;
 
 export const WorksCardImgContainer = styled.div`
-  width: 260px;
+  width: 90%;
   align-self: center;
   & img {
     width: 100%;
@@ -157,6 +127,7 @@ export const WorksCardName = styled.span`
 export const WorksCardStack = styled.span`
   display: flex;
   gap: 10px;
+  font-size: 0.8rem;
 
   & > span {
     color: var(--white);

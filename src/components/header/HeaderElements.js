@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const AboutMeSection = styled.section`
+export const HeaderSection = styled.section`
   height: 50vh;
   margin-left: 60px;
   background: var(--white);
@@ -9,7 +9,7 @@ export const AboutMeSection = styled.section`
   gap: 80px;
 `;
 
-export const AboutMeImgContainer = styled.div`
+export const HeaderImgContainer = styled.div`
   min-height: 300px;
   min-width: 300px;
   width: 300px;
@@ -26,35 +26,30 @@ export const AboutMeImgContainer = styled.div`
   }
 `;
 
-export const AboutMeInfoContainer = styled.div`
+export const HeaderInfoContainer = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 80px;
-  border-left: 1px solid var(--dark);
-  width: 40%;
+  width: 100%;
+  position: relative;
 `;
 
-export const AboutMeName = styled.span`
-  font-size: 2.3rem;
+export const HeaderName = styled.span`
+  font-size: 10rem;
   font-weight: bold;
   color: var(--dark);
 `;
 
-export const AboutMeProfession = styled.span`
-  font-size: 1.6rem;
+export const HeaderProfession = styled.span`
+  font-size: 2.5rem;
   color: var(--primary);
 `;
 
-export const AboutMeDescription = styled.p`
-  min-width: 300px;
-  margin-top: 30px;
-  color: var(--black);
-`;
-
-export const AboutMeSecondInfoContainer = styled.div`
+export const HeaderSecondInfoContainer = styled.div`
   display: flex;
-  width: 25%;
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
   height: 100%;
   align-items: flex-end;
   justify-content: end;
@@ -68,8 +63,8 @@ export const AboutMeSecondInfoContainer = styled.div`
   }
 `;
 
-export const AboutMeYear = styled.span``;
+export const HeaderYear = styled.span``;
 
-export const AboutMeUbication = styled.span`
+export const HeaderUbication = styled.span`
   text-align: center;
 `;

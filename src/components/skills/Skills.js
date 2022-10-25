@@ -13,37 +13,39 @@ import { SiTypescript, SiNodedotjs, SiJavascript } from "react-icons/si";
 const Skills = () => {
   return (
     <SkillsSection id="skills">
-      <div className="skills-container">
-        <SkillsTitle>Tecnologías que uso</SkillsTitle>
-        <SkillsIconsContainer>
-          <SkillsIconsLi>
-            <AiFillHtml5 />
-          </SkillsIconsLi>
+      <div className="container-content">
+        <div className="skills-container">
+          <SkillsTitle>Tecnologías que uso</SkillsTitle>
+          <SkillsIconsContainer>
+            <SkillsIconsLi>
+              <AiFillHtml5 />
+            </SkillsIconsLi>
 
-          <SkillsIconsLi>
-            <DiCss3 />
-          </SkillsIconsLi>
+            <SkillsIconsLi>
+              <DiCss3 />
+            </SkillsIconsLi>
 
-          <SkillsIconsLi>
-            <SiJavascript />
-          </SkillsIconsLi>
+            <SkillsIconsLi>
+              <SiJavascript />
+            </SkillsIconsLi>
 
-          <SkillsIconsLi>
-            <FaReact />
-          </SkillsIconsLi>
-        </SkillsIconsContainer>
-      </div>
-      <div className="skills-container">
-        <SkillsTitle>Aprendiendo</SkillsTitle>
+            <SkillsIconsLi>
+              <FaReact />
+            </SkillsIconsLi>
+          </SkillsIconsContainer>
+        </div>
+        <div className="skills-container">
+          <SkillsTitle>Aprendiendo</SkillsTitle>
 
-        <SkillsIconsContainer>
-          <SkillsIconsLi>
-            <SiTypescript />
-          </SkillsIconsLi>
-          <SkillsIconsLi>
-            <SiNodedotjs />
-          </SkillsIconsLi>
-        </SkillsIconsContainer>
+          <SkillsIconsContainer>
+            <SkillsIconsLi>
+              <SiTypescript />
+            </SkillsIconsLi>
+            <SkillsIconsLi>
+              <SiNodedotjs />
+            </SkillsIconsLi>
+          </SkillsIconsContainer>
+        </div>
       </div>
     </SkillsSection>
   );

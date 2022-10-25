@@ -5,10 +5,11 @@ export const SkillsSection = styled.section`
   margin-left: 60px;
   background: var(--primary);
   color: var(--white);
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
   padding: 80px;
+
+  & .container-content {
+    align-items: center;
+  }
 
   & .skills-container {
     display: flex;
