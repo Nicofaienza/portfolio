@@ -32,7 +32,6 @@ export const HeroBg = styled.div`
   & video {
     width: 100%;
     height: 100vh;
-    height: var(--doc-height);
     position: absolute;
     object-fit: cover;
     margin: auto;
