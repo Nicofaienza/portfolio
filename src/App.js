@@ -8,14 +8,16 @@ import "./styles/index.css";
 import { useEffect } from "react";
 
 function App() {
+  /* 100VH RESPONSIVE */
+  const documentHeight = () => {
+    const doc = document.documentElement;
+    doc.style.setProperty("--doc-height", `${window.innerHeight}px`);
+  };
+  window.addEventListener("resize", documentHeight);
+  documentHeight();
+
   useEffect(() => {
     window.scrollTo(0, 0);
-    const documentHeight = () => {
-      const doc = document.documentElement;
-      doc.style.setProperty("--doc-height", `${window.innerHeight}px`);
-    };
-    window.addEventListener("resize", documentHeight);
-    documentHeight();
   }, []);
 
   return (
