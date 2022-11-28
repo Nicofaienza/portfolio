@@ -1,15 +1,15 @@
 import styled from "styled-components";
 
 export const WorksSection = styled.section`
-  position: relative;
   display: flex;
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  padding-left: 60px;
   background: var(--white);
   flex-direction: column;
   align-items: center;
   justify-content: space-evenly;
+  padding: 96px 0;
+  gap: 96px;
 
   & .mainContainer {
     width: 100%;
@@ -31,97 +31,63 @@ export const WorksSection = styled.section`
   }
 `;
 
-export const WorksContainer = styled.div`
-  display: flex;
-  gap: 60px;
-  flex-wrap: wrap;
+export const WorkCardsContainer = styled.div`
   width: 90%;
+  max-width: 1300px;
+  display: flex;
+  flex-wrap: wrap;
   justify-content: center;
-  align-items: center;
-  height: 50vh;
-
-  & #works-arrow-left {
-    top: 50%;
-    left: 10%;
-  }
-
-  & #works-arrow-right {
-    top: 50%;
-    right: 10%;
-  }
-`;
-
-export const WorksArrow = styled.div`
-  position: absolute;
-  cursor: pointer;
-  height: 50px;
-  width: 50px;
-
-  & svg {
-    height: 100%;
-    width: 100%;
-    transition: transform 0.3s ease;
-    color: var(--dark);
-  }
-
-  & svg:hover {
-    transform: scale(1.1);
-  }
-`;
-
-export const WorksTitle = styled.span`
-  font-size: 3rem;
-  font-weight: bold;
-  color: var(--primary);
+  grid-gap: 24px;
 `;
 
 export const WorksCard = styled.div`
+  width: 30%;
+  min-width: 290px;
   display: flex;
   flex-direction: column;
-
-  background: rgba(65, 90, 119, 0.5);
-  border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(65, 90, 119, 0.5);
+  background: var(--dark);
+  box-shadow: 0 4px 30px rgba(65, 90, 119, 0.2);
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
   align-items: center;
-  padding: 20px;
-  border-radius: 20px;
-  gap: 20px;
+  gap: 16px;
   transition: all 0.3s ease;
+  padding-bottom: 16px;
+  border-bottom: 4px solid var(--primary);
 
   & #card-icons-container {
     margin-top: 20px;
     display: flex;
     gap: 8px;
-    align-self: flex-end;
   }
 
   & #card-icons-container a {
-    color: var(--vlack);
   }
 
   & #card-icons-container svg {
     width: 25px;
     height: 25px;
     cursor: pointer;
+    color: var(--light);
+  }
+
+  & #card-icons-container svg path {
+    stroke: var(--light);
   }
 `;
 
 export const WorksCardImgContainer = styled.div`
-  width: 90%;
+  width: 100%;
   align-self: center;
   & img {
     width: 100%;
-    border-radius: 20px;
   }
 `;
 
 export const WorksCardName = styled.span`
   font-size: 1.3rem;
   font-weight: bold;
-  color: var(--dark);
+  color: var(--white);
 `;
 
 export const WorksCardStack = styled.span`
@@ -130,27 +96,42 @@ export const WorksCardStack = styled.span`
   font-size: 0.8rem;
 
   & > span {
-    color: var(--white);
-    background: var(--black);
+    color: var(--black);
+    background: var(--light);
     padding: 4px 8px;
   }
 `;
 
 export const WorksButton = styled.a`
-  padding: 15px 35px;
-  border-radius: 15px;
-  background: var(--primary);
-  color: var(--white);
-  font-size: 1.2rem;
+  padding: 12px 18px;
+  color: var(--primary);
+  font-size: 1.1rem;
   text-decoration: none;
-  font-weight: bold;
   transition: all 0.3s ease;
-  border: 4px solid var(--dark);
+  border: 1px solid var(--primary);
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+  cursor: pointer;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    z-index: -1;
+    transition: all 0.3s ease;
+    background: var(--primary);
+    overflow: hidden;
+  }
+
+  &:hover::after {
+    bottom: 0;
+  }
 
   &:hover {
-    transform: scale(1.1);
-    color: var(--primary);
-    background: var(--white);
-    border: 4px solid var(--dark);
+    color: var(--white);
   }
 `;

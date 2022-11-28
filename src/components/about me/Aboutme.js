@@ -1,51 +1,112 @@
 import {
+  AboutMeCard,
+  AboutMeCardsContainer,
+  AboutMeContainer,
   AboutMeDescription,
   AboutMeImgContainer,
   AboutMeInfoContainer,
   AboutMeName,
-  AboutMeProfession,
   AboutMeSecondInfoContainer,
   AboutMeSection,
+  AboutMeStack,
+  AboutMeStackTitle,
+  TitleSection,
 } from "./AboutMeElements";
-import perfil from "../../images/perfil.jpg";
+import perfil from "../../images/perfil.png";
 import { AiOutlineLinkedin, AiOutlineGithub } from "react-icons/ai";
+
+import responsiveIcon from "../../images/responsive-icon.png";
+import dynamicIcon from "../../images/dynamic-icon.png";
+
+import {
+  SkillsIconsContainer,
+  SkillsIconsLi,
+} from "../skills/SkillsElements.js";
+
+import { AiFillHtml5 } from "react-icons/ai";
+import { DiCss3 } from "react-icons/di";
+import { FaReact, FaGitAlt, FaGithub } from "react-icons/fa";
+import { SiJavascript } from "react-icons/si";
 
 const Aboutme = () => {
   return (
     <AboutMeSection id="about-me">
-      <div className="container-content">
-        <AboutMeImgContainer>
-          <img id="perfil" src={perfil} />
-        </AboutMeImgContainer>
+      <TitleSection>SOBRE MI</TitleSection>
+      <div className="container-content ">
+        <AboutMeContainer>
+          <AboutMeImgContainer>
+            <img loading="lazy" id="perfil" src={perfil} />
+            <AboutMeSecondInfoContainer>
+              <a
+                target="__blank"
+                href="https://www.linkedin.com/in/nicolas-faienza/"
+              >
+                <AiOutlineLinkedin />
+                <tool-tip>Linkedin</tool-tip>
+              </a>
+              <a target="__blank" href="https://github.com/Nicofaienza">
+                <AiOutlineGithub />
+                <tool-tip>GitHub</tool-tip>
+              </a>
+            </AboutMeSecondInfoContainer>
+          </AboutMeImgContainer>
 
-        <AboutMeInfoContainer>
-          <AboutMeName>Nicolás Faienza</AboutMeName>
-          <AboutMeProfession>Frontend Developer</AboutMeProfession>
+          <AboutMeInfoContainer>
+            <AboutMeName>Nicolás Faienza</AboutMeName>
+            <AboutMeDescription>
+              Soy desarrollador frontend de formación autodidacta residente en
+              Mar del Plata, Argentina. <br />
+              Me apasiona crear soluciones tecnológicas eficientes y estéticas.
+            </AboutMeDescription>
+          </AboutMeInfoContainer>
+        </AboutMeContainer>
+        <div id="skills-container">
+          <AboutMeCardsContainer>
+            <AboutMeCard>
+              <img loading="lazy" src={responsiveIcon} alt="" />
+              <p>Mis trabajos se adaptan a cualquier dispositivo.</p>
+            </AboutMeCard>
+            <AboutMeCard>
+              <img loading="lazy" src={dynamicIcon} alt="" />
+              <p>Desarrollo experiencias de usuario intuitivas y dinámicas.</p>
+            </AboutMeCard>
+          </AboutMeCardsContainer>
 
-          <AboutMeDescription>
-            Mi primer contacto con el mundo de la programación fue en el 2017
-            con Python en la escuela secundaria. Solo aprendí los conceptos
-            básicos de este lenguaje de programación e hice mis primeros
-            programas pero no avancé mucho más. Luego de unos años, decidí
-            retomar con el aprendizaje y a comienzos de 2022 empecé un curso de
-            HTML y CSS. Para practicar hice mis primeras páginas web estáticas.
-            Continué con JavaScript y el manejo del DOM. Al tener un
-            conocimiento aceptable de estas tecnologías, decidí aprender a usar
-            ReactJS y poner en práctica todos mis conocimientos a través de la
-            realización de proyectos. Durante este periodo, utilicé librerías
-            como react-icons, styled-components, react-intersection-observer y
-            react-router. Aprendí a consumir API's, a maquetear un proyecto de
-            Figma en Perfect Pixel y a usar Git y GitHub. Cada día sigo
-            aprendiendo y consumiendo contenido de grandes profesionales para
-            mejorar en esta profesión.
-          </AboutMeDescription>
-        </AboutMeInfoContainer>
+          <AboutMeStack>
+            <AboutMeStackTitle>STACK</AboutMeStackTitle>
+            <SkillsIconsContainer>
+              <SkillsIconsLi>
+                <AiFillHtml5 />
+                <tool-tip>HTML5</tool-tip>
+              </SkillsIconsLi>
 
-        <AboutMeSecondInfoContainer>
-          <AiOutlineLinkedin />
+              <SkillsIconsLi>
+                <DiCss3 />
+                <tool-tip>CSS3</tool-tip>
+              </SkillsIconsLi>
 
-          <AiOutlineGithub />
-        </AboutMeSecondInfoContainer>
+              <SkillsIconsLi>
+                <SiJavascript />
+                <tool-tip>JavaScript</tool-tip>
+              </SkillsIconsLi>
+
+              <SkillsIconsLi>
+                <FaReact />
+                <tool-tip>React JS</tool-tip>
+              </SkillsIconsLi>
+
+              <SkillsIconsLi>
+                <FaGitAlt />
+                <tool-tip>Git</tool-tip>
+              </SkillsIconsLi>
+
+              <SkillsIconsLi>
+                <FaGithub />
+                <tool-tip>GitHub</tool-tip>
+              </SkillsIconsLi>
+            </SkillsIconsContainer>
+          </AboutMeStack>
+        </div>
       </div>
     </AboutMeSection>
   );

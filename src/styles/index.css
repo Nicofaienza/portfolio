@@ -1,5 +1,18 @@
 html {
+  font-family: "Titillium Web", sans-serif;
   scroll-behavior: smooth;
+}
+
+:root {
+  --doc-height: 100%;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  height: 100vh; /* fallback for Js load */
+  height: var(--doc-height);
 }
 
 * {
@@ -12,32 +25,12 @@ img::selection {
   background: transparent;
 }
 
-body {
-  margin: 0;
-  font-family: "Roboto Condensed", sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
-.container-content {
-  margin: auto;
-  width: 90%;
-  max-width: 1500px;
-  display: flex;
-  height: 100%;
-  justify-content: space-between;
-}
-
-code {
-  font-family: "Roboto", source-code-pro, Menlo, Monaco, Consolas, "Courier New",
-    monospace;
-}
-
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
+
 * {
   scrollbar-width: auto;
-  scrollbar-color: #415a77 #ffffff;
+  scrollbar-color: var(--dark) #ffffff;
 }
 
 /* Chrome, Edge, and Safari */
@@ -46,49 +39,61 @@ code {
 }
 
 *::-webkit-scrollbar-track {
-  background: #ffffff;
+  background: var(--black);
 }
 
 *::-webkit-scrollbar-thumb {
-  background-color: #415a77;
-  border-radius: 10px;
-  border: 2px solid #ffffff;
+  background-color: var(--dark);
+
+  border: 1px solid var(--black);
 }
 
-/*Swipper CSS*/
+/*CONTAINER APP*/
 
-.swiper {
-  width: 80%;
-  height: 70%;
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-}
-
-.swiper-slide img {
-  display: block;
+#app-slider {
+  position: relative;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
+  height: 100vh;
 }
 
-.swiper-button-next,
-.swiper-button-prev {
+#app-container {
+  height: 100%;
+  white-space: nowrap;
+}
+
+#app-container * {
+  white-space: normal;
+}
+
+.app-slider-position {
+  display: inline-block;
+  width: 100%;
+  height: 100vh;
+}
+
+/* TOOL TIP */
+
+tool-tip {
+  position: absolute;
+  z-index: 1;
+  pointer-events: none;
+  user-select: none;
+  box-shadow: 0 0 16px rgba(20, 39, 130, 0.5);
+  font-size: 0.8rem;
   color: var(--dark);
+  background: var(--white);
+  padding: 0.3rem 0.8rem;
+  opacity: 0;
+  top: 100%;
+
+  transition: opacity 0.3s ease;
+  width: max-content;
+}
+
+:has(> tool-tip) {
+  position: relative;
+}
+
+:has(> tool-tip):hover tool-tip {
+  opacity: 1;
 }
