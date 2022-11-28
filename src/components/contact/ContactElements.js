@@ -58,7 +58,7 @@ export const ContactForm = styled.form`
   flex-direction: column;
   align-items: center;
   width: 30%;
-  min-width: 290px;
+  min-width: 280px;
   gap: 16px;
 
   & label {

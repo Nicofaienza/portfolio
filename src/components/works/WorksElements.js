@@ -42,7 +42,7 @@ export const WorkCardsContainer = styled.div`
 
 export const WorksCard = styled.div`
   width: 30%;
-  min-width: 290px;
+  min-width: 280px;
   display: flex;
   flex-direction: column;
   background: var(--dark);
