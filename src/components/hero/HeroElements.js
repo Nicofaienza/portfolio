@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const HeroSection = styled.section`
   width: 100%;
+  height: 100vh;
   height: var(--doc-height);
   display: flex;
   justify-content: center;
@@ -10,7 +11,8 @@ export const HeroSection = styled.section`
 
 export const HeroBg = styled.div`
   width: 100%;
-  height: 100%;
+  height: 100vh;
+  height: var(--doc-height);
   position: absolute;
   top: 0;
   left: 0;
@@ -29,7 +31,8 @@ export const HeroBg = styled.div`
 
   & video {
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    height: var(--doc-height);
     position: absolute;
     object-fit: cover;
     margin: auto;
