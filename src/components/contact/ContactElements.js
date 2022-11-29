@@ -111,6 +111,41 @@ export const ContactForm = styled.form`
   }
 `;
 
+export const ContactButton = styled.button`
+  padding: 12px 18px;
+  color: var(--white);
+  font-size: 1.1rem;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  border: 1px solid var(--primary);
+  position: relative;
+  z-index: 5;
+  overflow: hidden;
+  cursor: pointer;
+  background: transparent;
+
+  &::after {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    z-index: -1;
+    transition: all 0.3s ease;
+    background: var(--primary);
+    overflow: hidden;
+  }
+
+  &:hover::after {
+    bottom: 0;
+  }
+
+  &:hover {
+    color: var(--white);
+  }
+`;
+
 export const ContactSocialsContainer = styled.div`
   display: flex;
   flex-direction: column;

@@ -5,37 +5,39 @@ import {
   ContactForm,
   ContactTitle,
   ContactSocialsContainer,
+  ContactButton,
 } from "./ContactElements";
 import { AiOutlineLinkedin, AiOutlineGithub } from "react-icons/ai";
 import { ImArrowUp } from "react-icons/im";
 import { AboutMeSecondInfoContainer } from "../about me/AboutMeElements";
 
-import { WorksButton } from "../works/WorksElements";
-
 const Contact = () => {
+  window.onbeforeunload = () => {
+    for (const form of document.getElementsByTagName("form")) {
+      form.reset();
+    }
+  };
   return (
     <ContactSection id="contact">
       <ContactContainer>
         <ContactTitle>CONTACTO</ContactTitle>
 
-        <ContactForm>
+        <ContactForm action="https://formspree.io/f/mknelnyl" method="POST">
           <ContactSpan>¡No dudes en consultarme!</ContactSpan>
-          <label className="contact__form-label">
+          <label>
             <input
-              autoFocus
-              className="contact__form-input"
+              type="name"
+              name="name"
               placeholder="Nombre y apellido / Empresa"
-            ></input>
+            />
           </label>
-          <label className="contact__form-label">
-            <input
-              className="contact__form-input"
-              type="email"
-              placeholder="Email"
-            ></input>
+          <label>
+            <input type="email" name="email" placeholder="Email" />
           </label>
-          <textarea placeholder="Dejame tu mensaje..."></textarea>
-          <WorksButton>Enviar</WorksButton>
+
+          <textarea name="message" placeholder="Dejame tu mensaje"></textarea>
+
+          <ContactButton type="submit">Enviar</ContactButton>
         </ContactForm>
         <ContactSocialsContainer>
           <AboutMeSecondInfoContainer>
