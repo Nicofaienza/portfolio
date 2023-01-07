@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.4ada8547.css",
-    "main.js": "/portfolio/static/js/main.f9f42271.js",
-    "static/media/bg-hero.mp4": "/portfolio/static/media/bg-hero.dd190585e3f7718d238e.mp4",
+    "main.css": "/portfolio/static/css/main.48b58cb6.css",
+    "main.js": "/portfolio/static/js/main.c70aec4e.js",
+    "static/media/bg-hero-2.mp4": "/portfolio/static/media/bg-hero-2.0aa5e668e72063f6d871.mp4",
     "static/media/portfolio-img.png": "/portfolio/static/media/portfolio-img.a9db60712edb201664a7.png",
     "static/media/mv-constructora-img.png": "/portfolio/static/media/mv-constructora-img.5dc00ba3ee3fec68f0a9.png",
-    "static/media/perfil.png": "/portfolio/static/media/perfil.d1e73b56dd2cbab3ff16.png",
     "static/media/mv-consultora-img.png": "/portfolio/static/media/mv-consultora-img.eefbedef49906928cb3b.png",
+    "static/media/fotoPerfil.jpg": "/portfolio/static/media/fotoPerfil.af284073b8d68b41f543.jpg",
     "static/media/weather-app.png": "/portfolio/static/media/weather-app.993d823d7d416fe2dd34.png",
     "static/media/aerolab-img.png": "/portfolio/static/media/aerolab-img.e844d71e28a4758ddc85.png",
     "static/media/dynamic-icon.png": "/portfolio/static/media/dynamic-icon.eb03165fae6e61185889.png",
     "static/media/responsive-icon.png": "/portfolio/static/media/responsive-icon.b941bd4515939e7168fa.png",
     "static/media/pomodoro-img.png": "/portfolio/static/media/pomodoro-img.0a0effd7d3453c0589b3.png",
     "index.html": "/portfolio/index.html",
-    "main.4ada8547.css.map": "/portfolio/static/css/main.4ada8547.css.map",
-    "main.f9f42271.js.map": "/portfolio/static/js/main.f9f42271.js.map"
+    "main.48b58cb6.css.map": "/portfolio/static/css/main.48b58cb6.css.map",
+    "main.c70aec4e.js.map": "/portfolio/static/js/main.c70aec4e.js.map"
   },
   "entrypoints": [
-    "static/css/main.4ada8547.css",
-    "static/js/main.f9f42271.js"
+    "static/css/main.48b58cb6.css",
+    "static/js/main.c70aec4e.js"
   ]
 }
