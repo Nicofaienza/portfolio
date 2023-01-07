@@ -83,17 +83,17 @@ export const AboutMeImgContainer = styled.div`
   height: 300px;
   width: 290px;
   position: relative;
-
+  overflow: hidden;
   margin-bottom: 16px;
   border: 4px solid var(--dark);
+  border-bottom: 0;
 
   & #perfil {
-    width: 100%;
+    height: 120%;
     position: absolute;
-    left: 0;
-    right: 0;
+    left: -50px;
     margin: auto;
-    bottom: 0px;
+    top: 0px;
   }
 
   @media screen and (max-width: 1000px) {
@@ -105,7 +105,14 @@ export const AboutMeImgContainer = styled.div`
 export const AboutMeSecondInfoContainer = styled.div`
   display: flex;
   align-items: center;
+  justify-content: center;
   gap: 16px;
+  width: 100%;
+  height: fit-content;
+  background: var(--dark);
+  z-index: 5;
+  position: relative;
+  padding: 4px 0;
 
   & a {
     width: 40px;
@@ -116,8 +123,12 @@ export const AboutMeSecondInfoContainer = styled.div`
   & svg {
     height: 100%;
     width: 100%;
-    color: var(--light);
+    color: var(--white);
     cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  svg:hover {
+    transform: scale(1.05);
   }
 `;
 

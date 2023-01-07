@@ -6,7 +6,7 @@ import {
   HeroBg,
   Button,
 } from "./HeroElements";
-import heroVideo from "./videos/bg-hero.mp4";
+import heroVideo from "./videos/bg-hero-2.mp4";
 
 const Hero = () => {
   return (
@@ -19,7 +19,6 @@ const Hero = () => {
       <HeroContainer id="hero__container">
         <HeroName>Nicolás Faienza</HeroName>
         <HeroTitle>Frontend Developer</HeroTitle>
-        <Button href="#works">Ver trabajos</Button>
       </HeroContainer>
     </HeroSection>
   );

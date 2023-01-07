@@ -6,7 +6,7 @@ export const NavbarWrapper = styled.nav`
   height: 55px;
   width: 100%;
   position: sticky;
-  top: 0;
+  top: -1px;
   left: 0;
   z-index: 100;
   display: flex;

@@ -6,13 +6,12 @@ export const ContactSection = styled.div`
 `;
 
 export const ContactContainer = styled.div`
-  clip-path: polygon(50% 10%, 100% 0, 100% 60%, 100% 100%, 0 100%, 0% 60%, 0 0);
   background: var(--black);
   width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 180px 0 96px;
+  padding: 90px 0 96px;
   gap: 96px;
   margin: auto;
 
@@ -21,6 +20,11 @@ export const ContactContainer = styled.div`
     width: 40px;
     height: 40px;
     cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+
+  svg:hover {
+    transform: scale(1.05);
   }
 `;
 

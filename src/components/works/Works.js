@@ -1,4 +1,9 @@
-import { WorkCardsContainer, WorksSection, WorksButton } from "./WorksElements";
+import {
+  WorkCardsContainer,
+  WorksSection,
+  WorksButton,
+  WorksCardModal,
+} from "./WorksElements";
 import Card from "./Card";
 import data from "./data.js";
 import { TitleSection } from "../about me/AboutMeElements";

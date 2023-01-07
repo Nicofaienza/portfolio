@@ -12,7 +12,7 @@ import {
   AboutMeStackTitle,
   TitleSection,
 } from "./AboutMeElements";
-import perfil from "../../images/perfil.png";
+import perfil from "../../images/fotoPerfil.jpg";
 import { AiOutlineLinkedin, AiOutlineGithub } from "react-icons/ai";
 
 import responsiveIcon from "../../images/responsive-icon.png";
@@ -23,10 +23,14 @@ import {
   SkillsIconsLi,
 } from "../skills/SkillsElements.js";
 
-import { AiFillHtml5 } from "react-icons/ai";
-import { DiCss3 } from "react-icons/di";
-import { FaReact, FaGitAlt, FaGithub } from "react-icons/fa";
-import { SiJavascript } from "react-icons/si";
+import {
+  FaReact,
+  FaGitAlt,
+  FaGithub,
+  FaHtml5,
+  FaCss3Alt,
+  FaJs,
+} from "react-icons/fa";
 
 const Aboutme = () => {
   return (
@@ -35,7 +39,7 @@ const Aboutme = () => {
       <div className="container-content ">
         <AboutMeContainer>
           <AboutMeImgContainer>
-            <img loading="lazy" id="perfil" src={perfil} />
+            <img id="perfil" src={perfil} />
             <AboutMeSecondInfoContainer>
               <a
                 target="__blank"
@@ -76,17 +80,17 @@ const Aboutme = () => {
             <AboutMeStackTitle>STACK</AboutMeStackTitle>
             <SkillsIconsContainer>
               <SkillsIconsLi>
-                <AiFillHtml5 />
+                <FaHtml5 />
                 <tool-tip>HTML5</tool-tip>
               </SkillsIconsLi>
 
               <SkillsIconsLi>
-                <DiCss3 />
+                <FaCss3Alt />
                 <tool-tip>CSS3</tool-tip>
               </SkillsIconsLi>
 
               <SkillsIconsLi>
-                <SiJavascript />
+                <FaJs />
                 <tool-tip>JavaScript</tool-tip>
               </SkillsIconsLi>
 

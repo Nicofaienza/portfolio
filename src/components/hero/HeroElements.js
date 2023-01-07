@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HeroSection = styled.section`
   width: 100%;
-  height: 100vh;
+  height: 50vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -10,9 +10,9 @@ export const HeroSection = styled.section`
 
 export const HeroBg = styled.div`
   width: 100%;
-  height: 100vh;
+  height: 100%;
   position: absolute;
-  top: 0;
+  top: -40%;
   left: 0;
   z-index: -1;
   overflow: hidden;
@@ -24,7 +24,7 @@ export const HeroBg = styled.div`
     position: absolute;
     top: 0;
     left: 0;
-    background-color: rgba(51, 102, 255, 0.3);
+    background-color: rgba(26, 33, 56, 0.7);
   }
 
   & video {

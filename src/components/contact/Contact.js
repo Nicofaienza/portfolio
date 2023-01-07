@@ -40,7 +40,7 @@ const Contact = () => {
           <ContactButton type="submit">Enviar</ContactButton>
         </ContactForm>
         <ContactSocialsContainer>
-          <AboutMeSecondInfoContainer>
+          <AboutMeSecondInfoContainer style={{ background: "transparent" }}>
             <a
               target="__blank"
               href="https://www.linkedin.com/in/nicolas-faienza/"
