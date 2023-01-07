@@ -39,7 +39,13 @@ const Aboutme = () => {
       <div className="container-content ">
         <AboutMeContainer>
           <AboutMeImgContainer>
-            <img id="perfil" src={perfil} />
+            <div id="perfil-container">
+              <img
+                id="perfil"
+                src={perfil}
+                alt="foto de perfil de Nicolás Faienza"
+              />
+            </div>
             <AboutMeSecondInfoContainer>
               <a
                 target="__blank"

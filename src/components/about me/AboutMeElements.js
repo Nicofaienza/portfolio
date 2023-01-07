@@ -83,17 +83,15 @@ export const AboutMeImgContainer = styled.div`
   height: 300px;
   width: 290px;
   position: relative;
-  overflow: hidden;
   margin-bottom: 16px;
   border: 4px solid var(--dark);
   border-bottom: 0;
 
   & #perfil {
-    height: 120%;
+    width: 100%;
     position: absolute;
-    left: -50px;
-    margin: auto;
-    top: 0px;
+    top: 0;
+    left: 0;
   }
 
   @media screen and (max-width: 1000px) {
