@@ -226,7 +226,7 @@ export const WorksCardStack = styled.span`
 `;
 
 export const WorksButton = styled.a`
-  padding: 12px 18px;
+  padding: 10px 22px;
   color: var(--primary);
   font-size: 1.1rem;
   text-decoration: none;

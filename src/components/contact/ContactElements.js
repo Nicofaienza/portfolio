@@ -116,7 +116,7 @@ export const ContactForm = styled.form`
 `;
 
 export const ContactButton = styled.button`
-  padding: 12px 18px;
+  padding: 10px 20px;
   color: var(--white);
   font-size: 1.1rem;
   text-decoration: none;
