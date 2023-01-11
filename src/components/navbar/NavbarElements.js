@@ -40,19 +40,20 @@ export const NavbarLi = styled.li`
 
   &::after {
     content: "";
-    width: 100%;
-    height: 3px;
-    background: var(--light);
+    width: 50%;
+    height: 2px;
+    background: var(--white);
     position: absolute;
     left: 0;
     right: 0;
     margin: auto;
-    bottom: -100%;
+    bottom: 20%;
     transition: all 0.3s ease;
+    transform: scale(0);
   }
 
   &:hover::after {
-    bottom: 0;
+    transform: scale(1);
   }
 
   @media screen and (max-width: 900px) {
