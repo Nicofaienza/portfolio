@@ -12,7 +12,6 @@ export const NavbarWrapper = styled.nav`
   display: flex;
   align-items: center;
   background: var(--black);
-  border-bottom: 1px solid var(--light);
 `;
 
 export const NavbarUl = styled.ul`
