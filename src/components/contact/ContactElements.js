@@ -52,6 +52,7 @@ export const ContactSpan = styled.span`
   color: var(--white);
   font-size: 1.3rem;
   font-weight: 300;
+  margin-bottom: 32px;
   @media screen and (max-width: 900px) {
     font-size: 1rem;
   }
@@ -61,9 +62,12 @@ export const ContactForm = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 30%;
+  width: 35%;
   min-width: 280px;
-  gap: 16px;
+  gap: 24px;
+  background: var(--dark);
+  padding: 56px 40px;
+  border-bottom: 4px solid var(--primary);
 
   & label {
     width: 100%;
@@ -74,12 +78,14 @@ export const ContactForm = styled.form`
     width: 100%;
     height: 100%;
     background: var(--white);
-    border: 2px solid var(--light);
+    border: transparent;
+    border-bottom: 4px solid var(--primary);
     padding-left: 8px;
   }
 
   & input::placeholder {
-    color: var(--dark);
+    color: #888;
+    font-weight: 600;
   }
 
   & input:focus {
@@ -87,31 +93,24 @@ export const ContactForm = styled.form`
     color: var(--black);
   }
 
-  & input:focus::placeholder {
-    color: #888;
-  }
-
   & textarea {
     resize: none;
     width: 100%;
     height: 120px;
     background: var(--white);
-    border: none;
-    border: 2px solid var(--light);
+    border: transparent;
+    border-bottom: 4px solid var(--primary);
     padding: 8px;
   }
 
   & textarea::placeholder {
-    color: var(--dark);
+    color: #888;
+    font-weight: 600;
+    font-size: 14px;
   }
 
   & textarea:focus {
     outline: none;
-    color: var(--black);
-  }
-
-  & textarea:focus::placeholder {
-    color: #888;
   }
 `;
 
@@ -121,12 +120,13 @@ export const ContactButton = styled.button`
   font-size: 1.1rem;
   text-decoration: none;
   transition: all 0.3s ease;
-  border: 1px solid var(--primary);
+  border: 1px solid var(--light);
   position: relative;
   z-index: 5;
   overflow: hidden;
   cursor: pointer;
   background: transparent;
+  margin-top: 32px;
 
   &::after {
     content: "";
@@ -137,7 +137,7 @@ export const ContactButton = styled.button`
     left: 0;
     z-index: -1;
     transition: all 0.3s ease;
-    background: var(--primary);
+    background: var(--light);
     overflow: hidden;
   }
 
@@ -146,7 +146,7 @@ export const ContactButton = styled.button`
   }
 
   &:hover {
-    color: var(--white);
+    color: var(--dark);
   }
 `;
 
