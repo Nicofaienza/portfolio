@@ -1,19 +1,62 @@
 import styled from "styled-components";
 
-export const FooterSection = styled.footer`
-  width: 100%;
-  height: 80px;
-  background: var(--dark);
+export const FooterWrapper = styled.footer`
+  height: 85px;
+  background: var(--light);
+  @media screen and (max-width: 1000px) {
+    height: max-content;
+  }
+`;
+
+export const FooterContainer = styled.div`
+  width: 90%;
+  height: 100%;
+  max-width: 1200px;
+  margin: auto;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
+  position: relative;
+
+  @media screen and (max-width: 1000px) {
+    flex-direction: column;
+    padding: 40px 0;
+    gap: 60px;
+  }
 `;
 
-export const FooterList = styled.ul`
+export const FooterEmail = styled.span`
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 25px;
+  color: var(--dark);
+
+  & span {
+    font-weight: 300;
+  }
+
+  @media screen and (max-width: 1000px) {
+    order: 2;
+  }
+`;
+
+export const FooterLinks = styled.ul`
   display: flex;
-  list-style: none;
-  gap: 16px;
-  color: var(--white);
+  gap: 32px;
 `;
 
-export const FooterLi = styled.li``;
+export const FooterLinksLi = styled.li`
+  list-style: none;
+  width: 32px;
+  height: 32px;
+  & a {
+    width: 100%;
+    height: 100%;
+  }
+
+  & svg {
+    width: 100%;
+    height: 100%;
+    color: var(--dark);
+  }
+`;

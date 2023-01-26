@@ -39,22 +39,7 @@ const Contact = () => {
 
           <ContactButton type="submit">Enviar</ContactButton>
         </ContactForm>
-        <ContactSocialsContainer>
-          <AboutMeSecondInfoContainer style={{ background: "transparent" }}>
-            <a
-              target="__blank"
-              href="https://www.linkedin.com/in/nicolas-faienza/"
-            >
-              <AiOutlineLinkedin />
-              <tool-tip>Linkedin</tool-tip>
-            </a>
-            <a target="__blank" href="https://github.com/Nicofaienza">
-              <AiOutlineGithub />
-              <tool-tip>GitHub</tool-tip>
-            </a>
-          </AboutMeSecondInfoContainer>
-          <span id="contact__socials-gmail">nicolas.faienza1@gmail.com</span>
-        </ContactSocialsContainer>
+
         <ImArrowUp
           onClick={() => {
             window.scrollTo(0, 0);

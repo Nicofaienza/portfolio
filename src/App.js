@@ -6,6 +6,7 @@ import Contact from "./components/contact/Contact";
 import Hero from "./components/hero/Hero";
 import "./styles/index.css";
 import { useEffect } from "react";
+import Footer from "./components/footer/Footer";
 
 function App() {
   useEffect(() => {
@@ -19,6 +20,7 @@ function App() {
       <Aboutme />
       <Works />
       <Contact />
+      <Footer />
     </div>
   );
 }
