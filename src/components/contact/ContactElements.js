@@ -63,7 +63,7 @@ export const ContactForm = styled.form`
   flex-direction: column;
   align-items: center;
   width: 35%;
-  min-width: 280px;
+
   gap: 24px;
   background: var(--dark);
   padding: 56px 40px;
@@ -81,6 +81,7 @@ export const ContactForm = styled.form`
     border: transparent;
     border-bottom: 4px solid var(--primary);
     padding-left: 8px;
+    min-width: 280px;
   }
 
   & input::placeholder {
@@ -101,6 +102,7 @@ export const ContactForm = styled.form`
     border: transparent;
     border-bottom: 4px solid var(--primary);
     padding: 8px;
+    min-width: 280px;
   }
 
   & textarea::placeholder {
@@ -111,6 +113,10 @@ export const ContactForm = styled.form`
 
   & textarea:focus {
     outline: none;
+  }
+
+  @media screen and (max-width: 1100px) {
+    width: 90%;
   }
 `;
 
