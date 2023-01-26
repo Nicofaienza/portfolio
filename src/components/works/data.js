@@ -1,11 +1,20 @@
 import aerolabImg from "../../images/aerolab-img.png";
-import mvConsultoraImg from "../../images/mv-consultora-img.png";
+import landingCVimg from "../../images/landing-cv.png";
 import weatherAppImg from "../../images/weather-app.png";
 import mvConstructoraImg from "../../images/mv-constructora-img.png";
 import pomodoroImg from "../../images/pomodoro-img.png";
 import portfolioImg from "../../images/portfolio-img.png";
 
 const data = [
+  {
+    id: 2,
+    name: "CV Landing Page",
+    img: landingCVimg,
+    linkDeploy: "http://www.nicolasfaienza.me/",
+    linkRepo: "https://github.com/Nicofaienza/CV-landing-page",
+    stack: ["HTML", "CSS", "TypeScript", "ReactJS"],
+    description: "",
+  },
   {
     id: 0,
     name: "Aerolab Challenge",
@@ -26,15 +35,7 @@ const data = [
     description:
       "Página de producto realizada para un cliente real en equipo con un desarrollador más. ",
   },
-  {
-    id: 2,
-    name: "MV Consultora",
-    img: mvConsultoraImg,
-    linkDeploy: "http://mvconsultora.com/",
-    linkRepo: "https://github.com/Nicofaienza/mv-consultora",
-    stack: ["HTML", "CSS", "JavaScript", "ReactJS"],
-    description: "",
-  },
+
   {
     id: 3,
     name: "Weather App",
