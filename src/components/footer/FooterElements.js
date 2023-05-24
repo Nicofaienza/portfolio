@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const FooterWrapper = styled.footer`
   height: 85px;
-  background: var(--light);
+  background: var(--black);
   @media screen and (max-width: 1000px) {
     height: max-content;
   }
@@ -29,7 +29,7 @@ export const FooterEmail = styled.span`
   font-weight: 600;
   font-size: 14px;
   line-height: 25px;
-  color: var(--dark);
+  color: var(--white);
 
   & span {
     font-weight: 300;
@@ -57,6 +57,6 @@ export const FooterLinksLi = styled.li`
   & svg {
     width: 100%;
     height: 100%;
-    color: var(--dark);
+    color: var(--white);
   }
 `;
