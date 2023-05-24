@@ -29,6 +29,10 @@ export const WorksSection = styled.section`
   & .error {
     display: none;
   }
+
+  @media screen and (max-width: 1100px) {
+    padding: 96px 0 0;
+  }
 `;
 
 export const WorkCardsContainer = styled.div`
@@ -256,5 +260,9 @@ export const WorksButton = styled.a`
 
   &:hover {
     color: var(--white);
+  }
+
+  @media screen and (max-width: 1100px) {
+    font-size: 0.9em;
   }
 `;

@@ -12,9 +12,9 @@ const Hero = () => {
   return (
     <HeroSection id="hero">
       <HeroBg>
-        <video autoPlay loop muted>
+        {/*  <video autoPlay loop muted>
           <source src={heroVideo} type="video/mp4"></source>
-        </video>
+        </video>*/}
       </HeroBg>
       <HeroContainer id="hero__container">
         <HeroName>Nicolás Faienza</HeroName>

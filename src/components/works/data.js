@@ -1,11 +1,20 @@
 import aerolabImg from "../../images/aerolab-img.png";
 import landingCVimg from "../../images/landing-cv.png";
-import weatherAppImg from "../../images/weather-app.png";
 import mvConstructoraImg from "../../images/mv-constructora-img.png";
 import pomodoroImg from "../../images/pomodoro-img.png";
 import portfolioImg from "../../images/portfolio-img.png";
+import mlImg from "../../images/ml-img.png";
 
 const data = [
+  {
+    id: 3,
+    name: "Clon de Mercado Libre",
+    img: mlImg,
+    linkDeploy: "https://nicofaienza.github.io/ml-clon/",
+    linkRepo: "https://github.com/Nicofaienza/ml-clon",
+    stack: ["HTML", "CSS", "TypeScript", "ReactJS"],
+    description: "",
+  },
   {
     id: 2,
     name: "CV Landing Page",
@@ -34,16 +43,6 @@ const data = [
     stack: ["HTML", "CSS", "JavaScript", "ReactJS"],
     description:
       "Página de producto realizada para un cliente real en equipo con un desarrollador más. ",
-  },
-
-  {
-    id: 3,
-    name: "Weather App",
-    img: weatherAppImg,
-    linkDeploy: "https://nicofaienza.github.io/weather-app/",
-    linkRepo: "https://github.com/Nicofaienza/weather-app",
-    stack: ["HTML", "CSS", "JavaScript", "ReactJS"],
-    description: "",
   },
 
   {

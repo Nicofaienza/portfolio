@@ -23,7 +23,7 @@ export const NavbarUl = styled.ul`
   height: 100%;
 
   @media screen and (max-width: 900px) {
-    gap: 24px;
+    gap: 16px;
   }
 `;
 
@@ -56,8 +56,9 @@ export const NavbarLi = styled.li`
   }
 
   @media screen and (max-width: 900px) {
-    font-size: 0.9rem;
-    padding: 0 8px;
+    font-size: 0.7rem;
+    min-width: 70px;
+    text-align: center;
   }
 `;
 

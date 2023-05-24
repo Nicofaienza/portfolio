@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const HeroSection = styled.section`
   width: 100%;
-  height: 50vh;
+  height: 20vh;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,14 +26,14 @@ export const HeroBg = styled.div`
     left: 0;
     background-color: rgba(26, 33, 56, 0.7);
   }
-
+  /*
   & video {
-    width: 100%;
-    height: 100vh;
+    width: 120%;
+
     position: absolute;
-    object-fit: cover;
+    left: -90px;
     margin: auto;
-  }
+  }*/
 `;
 
 export const HeroContainer = styled.div`

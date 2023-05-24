@@ -149,14 +149,14 @@ export const AboutMeName = styled.span`
 `;
 
 export const AboutMeDescription = styled.p`
-  min-width: 300px;
+  min-width: 200px;
   text-align: center;
   color: var(--black);
   font-weight: 300;
   font-size: 1.2rem;
 
   @media screen and (max-width: 1000px) {
-    font-size: 1rem;
+    font-size: 0.9rem;
   }
 `;
 
@@ -188,11 +188,11 @@ export const AboutMeCard = styled.div`
 
   @media screen and (max-width: 1000px) {
     & p {
-      font-size: 1rem;
+      font-size: 0.9rem;
     }
 
     & img {
-      height: 90px;
+      height: 80px;
     }
   }
 `;

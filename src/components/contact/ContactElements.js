@@ -26,6 +26,13 @@ export const ContactContainer = styled.div`
   svg:hover {
     transform: scale(1.05);
   }
+
+  @media screen and (max-width: 1100px) {
+    & svg {
+      width: 30px;
+      height: 30px;
+    }
+  }
 `;
 
 export const ContactTitle = styled.h3`
@@ -81,12 +88,10 @@ export const ContactForm = styled.form`
     border: transparent;
     border-bottom: 4px solid var(--primary);
     padding-left: 8px;
-    min-width: 280px;
   }
 
   & input::placeholder {
     color: #888;
-    font-weight: 600;
   }
 
   & input:focus {
@@ -102,12 +107,10 @@ export const ContactForm = styled.form`
     border: transparent;
     border-bottom: 4px solid var(--primary);
     padding: 8px;
-    min-width: 280px;
   }
 
   & textarea::placeholder {
     color: #888;
-    font-weight: 600;
     font-size: 14px;
   }
 
@@ -117,6 +120,11 @@ export const ContactForm = styled.form`
 
   @media screen and (max-width: 1100px) {
     width: 90%;
+
+    & input::placeholder,
+    textarea::placeholder {
+      font-size: 12px;
+    }
   }
 `;
 
@@ -153,6 +161,10 @@ export const ContactButton = styled.button`
 
   &:hover {
     color: var(--dark);
+  }
+
+  @media screen and (max-width: 1100px) {
+    font-size: 0.9em;
   }
 `;
 

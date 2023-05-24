@@ -9,6 +9,18 @@ export const SkillsIconsContainer = styled.ul`
   justify-items: center;
   height: 100%;
   width: 100%;
+
+  & #ts-icon {
+    height: 50px;
+    width: 50px;
+  }
+
+  @media screen and (max-width: 900px) {
+    & #ts-icon {
+      height: 35px;
+      width: 35px;
+    }
+  }
 `;
 
 export const SkillsIconsLi = styled.li`
