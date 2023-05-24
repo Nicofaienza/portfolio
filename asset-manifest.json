@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/portfolio/static/css/main.48b58cb6.css",
-    "main.js": "/portfolio/static/js/main.845d7bce.js",
+    "main.js": "/portfolio/static/js/main.f411c868.js",
     "static/media/bg-hero-2.mp4": "/portfolio/static/media/bg-hero-2.0aa5e668e72063f6d871.mp4",
     "static/media/mv-constructora-img.png": "/portfolio/static/media/mv-constructora-img.5dc00ba3ee3fec68f0a9.png",
     "static/media/portfolio-img.png": "/portfolio/static/media/portfolio-img.f2ea07e992aa500072e5.png",
     "static/media/landing-cv.png": "/portfolio/static/media/landing-cv.be4e1073ae26510a974e.png",
-    "static/media/weather-app.png": "/portfolio/static/media/weather-app.993d823d7d416fe2dd34.png",
+    "static/media/ml-img.png": "/portfolio/static/media/ml-img.03c770e371696c802551.png",
     "static/media/aerolab-img.png": "/portfolio/static/media/aerolab-img.e844d71e28a4758ddc85.png",
     "static/media/fotoPerfil.jpg": "/portfolio/static/media/fotoPerfil.4b93782a9fb09ebaed84.jpg",
     "static/media/dynamic-icon.png": "/portfolio/static/media/dynamic-icon.eb03165fae6e61185889.png",
@@ -14,10 +14,10 @@
     "static/media/pomodoro-img.png": "/portfolio/static/media/pomodoro-img.0a0effd7d3453c0589b3.png",
     "index.html": "/portfolio/index.html",
     "main.48b58cb6.css.map": "/portfolio/static/css/main.48b58cb6.css.map",
-    "main.845d7bce.js.map": "/portfolio/static/js/main.845d7bce.js.map"
+    "main.f411c868.js.map": "/portfolio/static/js/main.f411c868.js.map"
   },
   "entrypoints": [
     "static/css/main.48b58cb6.css",
-    "static/js/main.845d7bce.js"
+    "static/js/main.f411c868.js"
   ]
 }
