@@ -6,7 +6,7 @@ export const ContactSection = styled.div`
 `;
 
 export const ContactContainer = styled.div`
-  background: var(--black);
+  background: var(--white);
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -16,7 +16,7 @@ export const ContactContainer = styled.div`
   margin: auto;
 
   svg {
-    color: var(--light);
+    color: var(--primary);
     width: 40px;
     height: 40px;
     cursor: pointer;
@@ -30,7 +30,7 @@ export const ContactContainer = styled.div`
 
 export const ContactTitle = styled.h3`
   font-size: 2rem;
-  color: var(--white);
+  color: var(--dark);
   letter-spacing: 2px;
   position: relative;
   padding: 8px 0;
@@ -39,7 +39,7 @@ export const ContactTitle = styled.h3`
     content: "";
     width: 70%;
     height: 2px;
-    background: var(--white);
+    background: var(--dark);
     position: absolute;
     bottom: 0;
     left: 0;
