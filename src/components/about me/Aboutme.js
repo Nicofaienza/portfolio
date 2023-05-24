@@ -29,8 +29,9 @@ import {
   FaGithub,
   FaHtml5,
   FaCss3Alt,
-  FaJs,
 } from "react-icons/fa";
+
+import { SiTypescript } from "react-icons/si";
 
 const Aboutme = () => {
   return (
@@ -49,8 +50,7 @@ const Aboutme = () => {
             <AboutMeSecondInfoContainer>
               <a
                 target="__blank"
-                href="https://www.linkedin.com/in/nicolas-faienza/"
-              >
+                href="https://www.linkedin.com/in/nicolas-faienza/">
                 <AiOutlineLinkedin />
                 <tool-tip>Linkedin</tool-tip>
               </a>
@@ -95,9 +95,9 @@ const Aboutme = () => {
                 <tool-tip>CSS3</tool-tip>
               </SkillsIconsLi>
 
-              <SkillsIconsLi>
-                <FaJs />
-                <tool-tip>JavaScript</tool-tip>
+              <SkillsIconsLi id="ts-icon">
+                <SiTypescript />
+                <tool-tip>TypeScript</tool-tip>
               </SkillsIconsLi>
 
               <SkillsIconsLi>
