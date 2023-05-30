@@ -58,7 +58,7 @@ const data = [
     id: 5,
     name: "Portfolio",
     img: portfolioImg,
-    linkDeploy: "https://nicofaienza.github.io/portfolio/",
+    linkDeploy: "http://www.nicolasfaienza.me/",
     linkRepo: "https://github.com/Nicofaienza/portfolio",
     stack: ["HTML", "CSS", "JavaScript", "ReactJS"],
     description: "",
