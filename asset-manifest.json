@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.48b58cb6.css",
-    "main.js": "/portfolio/static/js/main.013ce500.js",
-    "static/media/bg-hero-2.mp4": "/portfolio/static/media/bg-hero-2.0aa5e668e72063f6d871.mp4",
-    "static/media/mv-constructora-img.png": "/portfolio/static/media/mv-constructora-img.5dc00ba3ee3fec68f0a9.png",
-    "static/media/portfolio-img.png": "/portfolio/static/media/portfolio-img.f2ea07e992aa500072e5.png",
-    "static/media/landing-cv.png": "/portfolio/static/media/landing-cv.be4e1073ae26510a974e.png",
-    "static/media/ml-img.png": "/portfolio/static/media/ml-img.03c770e371696c802551.png",
-    "static/media/aerolab-img.png": "/portfolio/static/media/aerolab-img.e844d71e28a4758ddc85.png",
-    "static/media/fotoPerfil.jpg": "/portfolio/static/media/fotoPerfil.4b93782a9fb09ebaed84.jpg",
-    "static/media/dynamic-icon.png": "/portfolio/static/media/dynamic-icon.eb03165fae6e61185889.png",
-    "static/media/responsive-icon.png": "/portfolio/static/media/responsive-icon.b941bd4515939e7168fa.png",
-    "static/media/pomodoro-img.png": "/portfolio/static/media/pomodoro-img.0a0effd7d3453c0589b3.png",
-    "index.html": "/portfolio/index.html",
-    "main.48b58cb6.css.map": "/portfolio/static/css/main.48b58cb6.css.map",
-    "main.013ce500.js.map": "/portfolio/static/js/main.013ce500.js.map"
+    "main.css": "/static/css/main.48b58cb6.css",
+    "main.js": "/static/js/main.b46f49e1.js",
+    "static/media/bg-hero-2.mp4": "/static/media/bg-hero-2.0aa5e668e72063f6d871.mp4",
+    "static/media/mv-constructora-img.png": "/static/media/mv-constructora-img.5dc00ba3ee3fec68f0a9.png",
+    "static/media/portfolio-img.png": "/static/media/portfolio-img.f2ea07e992aa500072e5.png",
+    "static/media/landing-cv.png": "/static/media/landing-cv.be4e1073ae26510a974e.png",
+    "static/media/ml-img.png": "/static/media/ml-img.03c770e371696c802551.png",
+    "static/media/aerolab-img.png": "/static/media/aerolab-img.e844d71e28a4758ddc85.png",
+    "static/media/fotoPerfil.jpg": "/static/media/fotoPerfil.4b93782a9fb09ebaed84.jpg",
+    "static/media/dynamic-icon.png": "/static/media/dynamic-icon.eb03165fae6e61185889.png",
+    "static/media/responsive-icon.png": "/static/media/responsive-icon.b941bd4515939e7168fa.png",
+    "static/media/pomodoro-img.png": "/static/media/pomodoro-img.0a0effd7d3453c0589b3.png",
+    "index.html": "/index.html",
+    "main.48b58cb6.css.map": "/static/css/main.48b58cb6.css.map",
+    "main.b46f49e1.js.map": "/static/js/main.b46f49e1.js.map"
   },
   "entrypoints": [
     "static/css/main.48b58cb6.css",
-    "static/js/main.013ce500.js"
+    "static/js/main.b46f49e1.js"
   ]
 }
