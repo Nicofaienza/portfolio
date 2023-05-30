@@ -19,7 +19,7 @@ const data = [
     id: 2,
     name: "CV Landing Page",
     img: landingCVimg,
-    linkDeploy: "http://www.nicolasfaienza.me/",
+    linkDeploy: "https://nicofaienza.github.io/CV-landing-page/",
     linkRepo: "https://github.com/Nicofaienza/CV-landing-page",
     stack: ["HTML", "CSS", "TypeScript", "ReactJS"],
     description: "",
